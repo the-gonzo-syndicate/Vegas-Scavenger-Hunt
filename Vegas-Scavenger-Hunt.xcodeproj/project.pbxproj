@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09296489E340E745525A6954 /* Pods_Vegas_Scavenger_HuntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F1AD6E56271687715AC409 /* Pods_Vegas_Scavenger_HuntUITests.framework */; };
+		23E4E39582045DC9E7A44BAB /* Pods_Vegas_Scavenger_Hunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED227C4A819B99533A91F4EB /* Pods_Vegas_Scavenger_Hunt.framework */; };
 		499601ED224C89EB00D1B1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499601EC224C89EB00D1B1CF /* AppDelegate.swift */; };
 		499601EF224C89EB00D1B1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499601EE224C89EB00D1B1CF /* ViewController.swift */; };
 		499601F2224C89EB00D1B1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499601F0224C89EB00D1B1CF /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		499601F7224C89F300D1B1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */; };
 		49960202224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */; };
 		4996020D224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */; };
+		4D0ED87F09B8EB23E6AA7C63 /* Pods_Vegas_Scavenger_HuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0518FD2FD6AA4C7400AE2E83 /* Pods-Vegas-Scavenger-HuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntTests/Pods-Vegas-Scavenger-HuntTests.debug.xcconfig"; sourceTree = "<group>"; };
+		14F93B5DCCE0EE756E41F94F /* Pods-Vegas-Scavenger-Hunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-Hunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-Hunt/Pods-Vegas-Scavenger-Hunt.debug.xcconfig"; sourceTree = "<group>"; };
+		15F1AD6E56271687715AC409 /* Pods_Vegas_Scavenger_HuntUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vegas_Scavenger_HuntUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23470183226A0B6C9A1CE4F4 /* Pods-Vegas-Scavenger-Hunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-Hunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-Hunt/Pods-Vegas-Scavenger-Hunt.release.xcconfig"; sourceTree = "<group>"; };
 		499601E9224C89EB00D1B1CF /* Vegas-Scavenger-Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vegas-Scavenger-Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499601EC224C89EB00D1B1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		499601EE224C89EB00D1B1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vegas-Scavenger-HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegas_Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		4996020E224C89F400D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vegas_Scavenger_HuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721BE86F1B27A266ABDAF24E /* Pods-Vegas-Scavenger-HuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntTests/Pods-Vegas-Scavenger-HuntTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DA6E1202E8838C8545DF9AC /* Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntUITests/Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75B07687B69CBF0EA55B374 /* Pods-Vegas-Scavenger-HuntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntUITests/Pods-Vegas-Scavenger-HuntUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED227C4A819B99533A91F4EB /* Pods_Vegas_Scavenger_Hunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vegas_Scavenger_Hunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E4E39582045DC9E7A44BAB /* Pods_Vegas_Scavenger_Hunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0ED87F09B8EB23E6AA7C63 /* Pods_Vegas_Scavenger_HuntTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09296489E340E745525A6954 /* Pods_Vegas_Scavenger_HuntUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B71101B39CCDC9EB273F4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14F93B5DCCE0EE756E41F94F /* Pods-Vegas-Scavenger-Hunt.debug.xcconfig */,
+				23470183226A0B6C9A1CE4F4 /* Pods-Vegas-Scavenger-Hunt.release.xcconfig */,
+				0518FD2FD6AA4C7400AE2E83 /* Pods-Vegas-Scavenger-HuntTests.debug.xcconfig */,
+				721BE86F1B27A266ABDAF24E /* Pods-Vegas-Scavenger-HuntTests.release.xcconfig */,
+				9DA6E1202E8838C8545DF9AC /* Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig */,
+				E75B07687B69CBF0EA55B374 /* Pods-Vegas-Scavenger-HuntUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		499601E0224C89EB00D1B1CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				49960200224C89F400D1B1CF /* Vegas-Scavenger-HuntTests */,
 				4996020B224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests */,
 				499601EA224C89EB00D1B1CF /* Products */,
+				39B71101B39CCDC9EB273F4B /* Pods */,
+				6BA005ADFB74C88A6383BA4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = "Vegas-Scavenger-HuntUITests";
 			sourceTree = "<group>";
 		};
+		6BA005ADFB74C88A6383BA4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED227C4A819B99533A91F4EB /* Pods_Vegas_Scavenger_Hunt.framework */,
+				535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */,
+				15F1AD6E56271687715AC409 /* Pods_Vegas_Scavenger_HuntUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49960211224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-Hunt" */;
 			buildPhases = (
+				374256B5CC57BC28C9A65B87 /* [CP] Check Pods Manifest.lock */,
 				499601E5224C89EB00D1B1CF /* Sources */,
 				499601E6224C89EB00D1B1CF /* Frameworks */,
 				499601E7224C89EB00D1B1CF /* Resources */,
+				077926A82E498081B88F0944 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49960214224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntTests" */;
 			buildPhases = (
+				38D133BB34F0AA03DE1728B5 /* [CP] Check Pods Manifest.lock */,
 				499601F9224C89F400D1B1CF /* Sources */,
 				499601FA224C89F400D1B1CF /* Frameworks */,
 				499601FB224C89F400D1B1CF /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49960217224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntUITests" */;
 			buildPhases = (
+				E4BF06907FA32016059E7BDD /* [CP] Check Pods Manifest.lock */,
 				49960204224C89F400D1B1CF /* Sources */,
 				49960205224C89F400D1B1CF /* Frameworks */,
 				49960206224C89F400D1B1CF /* Resources */,
@@ -250,6 +294,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		077926A82E498081B88F0944 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vegas-Scavenger-Hunt/Pods-Vegas-Scavenger-Hunt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vegas-Scavenger-Hunt/Pods-Vegas-Scavenger-Hunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		374256B5CC57BC28C9A65B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vegas-Scavenger-Hunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D133BB34F0AA03DE1728B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vegas-Scavenger-HuntTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BF06907FA32016059E7BDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vegas-Scavenger-HuntUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		499601E5224C89EB00D1B1CF /* Sources */ = {
@@ -430,6 +571,7 @@
 		};
 		49960212224C89F400D1B1CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14F93B5DCCE0EE756E41F94F /* Pods-Vegas-Scavenger-Hunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +590,7 @@
 		};
 		49960213224C89F400D1B1CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23470183226A0B6C9A1CE4F4 /* Pods-Vegas-Scavenger-Hunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +609,7 @@
 		};
 		49960215224C89F400D1B1CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0518FD2FD6AA4C7400AE2E83 /* Pods-Vegas-Scavenger-HuntTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +631,7 @@
 		};
 		49960216224C89F400D1B1CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721BE86F1B27A266ABDAF24E /* Pods-Vegas-Scavenger-HuntTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +653,7 @@
 		};
 		49960218224C89F400D1B1CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA6E1202E8838C8545DF9AC /* Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +674,7 @@
 		};
 		49960219224C89F400D1B1CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75B07687B69CBF0EA55B374 /* Pods-Vegas-Scavenger-HuntUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

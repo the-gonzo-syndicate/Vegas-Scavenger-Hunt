@@ -1,0 +1,6 @@
+framework module Pods_Vegas_Scavenger_Hunt {
+  umbrella header "Pods-Vegas-Scavenger-Hunt-umbrella.h"
+
+  export *
+  module * { export * }
+}
