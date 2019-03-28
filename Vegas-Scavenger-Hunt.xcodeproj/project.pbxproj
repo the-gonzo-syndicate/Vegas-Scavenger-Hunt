@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		499601ED224C89EB00D1B1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499601EC224C89EB00D1B1CF /* AppDelegate.swift */; };
+		499601EF224C89EB00D1B1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499601EE224C89EB00D1B1CF /* ViewController.swift */; };
+		499601F2224C89EB00D1B1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499601F0224C89EB00D1B1CF /* Main.storyboard */; };
+		499601F4224C89F300D1B1CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499601F3224C89F300D1B1CF /* Assets.xcassets */; };
+		499601F7224C89F300D1B1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */; };
+		49960202224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */; };
+		4996020D224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		499601FE224C89F400D1B1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499601E1224C89EB00D1B1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499601E8224C89EB00D1B1CF;
+			remoteInfo = "Vegas-Scavenger-Hunt";
+		};
+		49960209224C89F400D1B1CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499601E1224C89EB00D1B1CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 499601E8224C89EB00D1B1CF;
+			remoteInfo = "Vegas-Scavenger-Hunt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		499601E9224C89EB00D1B1CF /* Vegas-Scavenger-Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vegas-Scavenger-Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		499601EC224C89EB00D1B1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		499601EE224C89EB00D1B1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		499601F1224C89EB00D1B1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		499601F3224C89F300D1B1CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499601F6224C89F300D1B1CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		499601F8224C89F300D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499601FD224C89F400D1B1CF /* Vegas-Scavenger-HuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vegas-Scavenger-HuntTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegas_Scavenger_HuntTests.swift; sourceTree = "<group>"; };
+		49960203224C89F400D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vegas-Scavenger-HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegas_Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
+		4996020E224C89F400D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499601E6224C89EB00D1B1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499601FA224C89F400D1B1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49960205224C89F400D1B1CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		499601E0224C89EB00D1B1CF = {
+			isa = PBXGroup;
+			children = (
+				499601EB224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */,
+				49960200224C89F400D1B1CF /* Vegas-Scavenger-HuntTests */,
+				4996020B224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests */,
+				499601EA224C89EB00D1B1CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		499601EA224C89EB00D1B1CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499601E9224C89EB00D1B1CF /* Vegas-Scavenger-Hunt.app */,
+				499601FD224C89F400D1B1CF /* Vegas-Scavenger-HuntTests.xctest */,
+				49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499601EB224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */ = {
+			isa = PBXGroup;
+			children = (
+				499601EC224C89EB00D1B1CF /* AppDelegate.swift */,
+				499601EE224C89EB00D1B1CF /* ViewController.swift */,
+				499601F0224C89EB00D1B1CF /* Main.storyboard */,
+				499601F3224C89F300D1B1CF /* Assets.xcassets */,
+				499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */,
+				499601F8224C89F300D1B1CF /* Info.plist */,
+			);
+			path = "Vegas-Scavenger-Hunt";
+			sourceTree = "<group>";
+		};
+		49960200224C89F400D1B1CF /* Vegas-Scavenger-HuntTests */ = {
+			isa = PBXGroup;
+			children = (
+				49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */,
+				49960203224C89F400D1B1CF /* Info.plist */,
+			);
+			path = "Vegas-Scavenger-HuntTests";
+			sourceTree = "<group>";
+		};
+		4996020B224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */,
+				4996020E224C89F400D1B1CF /* Info.plist */,
+			);
+			path = "Vegas-Scavenger-HuntUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		499601E8224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49960211224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-Hunt" */;
+			buildPhases = (
+				499601E5224C89EB00D1B1CF /* Sources */,
+				499601E6224C89EB00D1B1CF /* Frameworks */,
+				499601E7224C89EB00D1B1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vegas-Scavenger-Hunt";
+			productName = "Vegas-Scavenger-Hunt";
+			productReference = 499601E9224C89EB00D1B1CF /* Vegas-Scavenger-Hunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		499601FC224C89F400D1B1CF /* Vegas-Scavenger-HuntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49960214224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntTests" */;
+			buildPhases = (
+				499601F9224C89F400D1B1CF /* Sources */,
+				499601FA224C89F400D1B1CF /* Frameworks */,
+				499601FB224C89F400D1B1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499601FF224C89F400D1B1CF /* PBXTargetDependency */,
+			);
+			name = "Vegas-Scavenger-HuntTests";
+			productName = "Vegas-Scavenger-HuntTests";
+			productReference = 499601FD224C89F400D1B1CF /* Vegas-Scavenger-HuntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49960207224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49960217224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntUITests" */;
+			buildPhases = (
+				49960204224C89F400D1B1CF /* Sources */,
+				49960205224C89F400D1B1CF /* Frameworks */,
+				49960206224C89F400D1B1CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4996020A224C89F400D1B1CF /* PBXTargetDependency */,
+			);
+			name = "Vegas-Scavenger-HuntUITests";
+			productName = "Vegas-Scavenger-HuntUITests";
+			productReference = 49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		499601E1224C89EB00D1B1CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Andrew;
+				TargetAttributes = {
+					499601E8224C89EB00D1B1CF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					499601FC224C89F400D1B1CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 499601E8224C89EB00D1B1CF;
+					};
+					49960207224C89F400D1B1CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 499601E8224C89EB00D1B1CF;
+					};
+				};
+			};
+			buildConfigurationList = 499601E4224C89EB00D1B1CF /* Build configuration list for PBXProject "Vegas-Scavenger-Hunt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 499601E0224C89EB00D1B1CF;
+			productRefGroup = 499601EA224C89EB00D1B1CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				499601E8224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */,
+				499601FC224C89F400D1B1CF /* Vegas-Scavenger-HuntTests */,
+				49960207224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499601E7224C89EB00D1B1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499601F7224C89F300D1B1CF /* LaunchScreen.storyboard in Resources */,
+				499601F4224C89F300D1B1CF /* Assets.xcassets in Resources */,
+				499601F2224C89EB00D1B1CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499601FB224C89F400D1B1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49960206224C89F400D1B1CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499601E5224C89EB00D1B1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499601EF224C89EB00D1B1CF /* ViewController.swift in Sources */,
+				499601ED224C89EB00D1B1CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499601F9224C89F400D1B1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49960202224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49960204224C89F400D1B1CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4996020D224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		499601FF224C89F400D1B1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499601E8224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */;
+			targetProxy = 499601FE224C89F400D1B1CF /* PBXContainerItemProxy */;
+		};
+		4996020A224C89F400D1B1CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 499601E8224C89EB00D1B1CF /* Vegas-Scavenger-Hunt */;
+			targetProxy = 49960209224C89F400D1B1CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		499601F0224C89EB00D1B1CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499601F1224C89EB00D1B1CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499601F6224C89F300D1B1CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4996020F224C89F400D1B1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49960210224C89F400D1B1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49960212224C89F400D1B1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-Hunt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-Hunt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49960213224C89F400D1B1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-Hunt/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-Hunt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49960215224C89F400D1B1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-HuntTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-HuntTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegas-Scavenger-Hunt.app/Vegas-Scavenger-Hunt";
+			};
+			name = Debug;
+		};
+		49960216224C89F400D1B1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-HuntTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-HuntTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vegas-Scavenger-Hunt.app/Vegas-Scavenger-Hunt";
+			};
+			name = Release;
+		};
+		49960218224C89F400D1B1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-HuntUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-HuntUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vegas-Scavenger-Hunt";
+			};
+			name = Debug;
+		};
+		49960219224C89F400D1B1CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5ZPBN2F6Q;
+				INFOPLIST_FILE = "Vegas-Scavenger-HuntUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Vegas-Scavenger-HuntUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vegas-Scavenger-Hunt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499601E4224C89EB00D1B1CF /* Build configuration list for PBXProject "Vegas-Scavenger-Hunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4996020F224C89F400D1B1CF /* Debug */,
+				49960210224C89F400D1B1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49960211224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-Hunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49960212224C89F400D1B1CF /* Debug */,
+				49960213224C89F400D1B1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49960214224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49960215224C89F400D1B1CF /* Debug */,
+				49960216224C89F400D1B1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49960217224C89F400D1B1CF /* Build configuration list for PBXNativeTarget "Vegas-Scavenger-HuntUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49960218224C89F400D1B1CF /* Debug */,
+				49960219224C89F400D1B1CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 499601E1224C89EB00D1B1CF /* Project object */;
+}
