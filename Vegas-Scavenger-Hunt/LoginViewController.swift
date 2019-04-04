@@ -17,6 +17,10 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func onCreate(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "loginToRegistrationSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 
