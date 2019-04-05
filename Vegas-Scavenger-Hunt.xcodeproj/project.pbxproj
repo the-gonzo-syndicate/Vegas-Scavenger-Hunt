@@ -17,6 +17,7 @@
 		49960202224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */; };
 		4996020D224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */; };
 		4D0ED87F09B8EB23E6AA7C63 /* Pods_Vegas_Scavenger_HuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */; };
+		50285B852256EFC3007FE5CA /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 50285B842256EFC3007FE5CA /* GoogLeNetPlaces.mlmodel */; };
 		6A455FEC224DAD7900F966FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FEB224DAD7900F966FD /* LoginViewController.swift */; };
 		6A455FEE224DAE9B00F966FD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FED224DAE9B00F966FD /* RegistrationViewController.swift */; };
 		6A455FF0224DB2E900F966FD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FEF224DB2E900F966FD /* ProfileViewController.swift */; };
@@ -62,6 +63,7 @@
 		49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vegas-Scavenger-HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegas_Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		4996020E224C89F400D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50285B842256EFC3007FE5CA /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = GoogLeNetPlaces.mlmodel; path = ../../SceneDetector_Starter/SceneDetector/Resources/GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 		535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vegas_Scavenger_HuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A455FEB224DAD7900F966FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6A455FED224DAE9B00F966FD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				499601F3224C89F300D1B1CF /* Assets.xcassets */,
 				499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */,
 				499601F8224C89F300D1B1CF /* Info.plist */,
+				50285B842256EFC3007FE5CA /* GoogLeNetPlaces.mlmodel */,
 				6A455FEB224DAD7900F966FD /* LoginViewController.swift */,
 				6A455FED224DAE9B00F966FD /* RegistrationViewController.swift */,
 				6A455FEF224DB2E900F966FD /* ProfileViewController.swift */,
@@ -426,6 +429,7 @@
 				6A455FF4224DB40700F966FD /* LeaderboardFeedViewController.swift in Sources */,
 				6A455FEC224DAD7900F966FD /* LoginViewController.swift in Sources */,
 				6A455FF6224DBFC700F966FD /* HuntDetailViewController.swift in Sources */,
+				50285B852256EFC3007FE5CA /* GoogLeNetPlaces.mlmodel in Sources */,
 				499601EF224C89EB00D1B1CF /* ViewController.swift in Sources */,
 				6A455FF2224DB3AF00F966FD /* ScavengerHuntFeedViewController.swift in Sources */,
 				6A455FF0224DB2E900F966FD /* ProfileViewController.swift in Sources */,

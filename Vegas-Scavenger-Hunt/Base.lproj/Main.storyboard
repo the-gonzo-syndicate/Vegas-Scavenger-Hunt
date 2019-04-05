@@ -347,16 +347,30 @@
                                 <rect key="frame" x="129" y="301" width="116" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="t0l-gZ-0xh" eventType="touchUpInside" id="VZ5-q3-wQD"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-Ze-4Qt">
+                                <rect key="frame" x="55" y="272" width="265" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="heo-Ux-Unb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="location capture" id="SB5-nb-yJ1"/>
+                    <connections>
+                        <outlet property="scene" destination="RyZ-FQ-hin" id="Ql5-N9-Ybx"/>
+                        <outlet property="sceneLabel" destination="pxd-Ze-4Qt" id="HGk-CL-yBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Gt-Ij-uzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1302" y="4477"/>
+            <point key="canvasLocation" x="1301.5999999999999" y="4476.6116941529235"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iv7-GE-wDr">
