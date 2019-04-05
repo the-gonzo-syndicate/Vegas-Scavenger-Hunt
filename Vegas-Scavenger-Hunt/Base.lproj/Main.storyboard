@@ -38,6 +38,10 @@
                                 <rect key="frame" x="130" y="440" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLogIn:" destination="5yi-Ts-npn" eventType="touchUpInside" id="n69-PD-U5O"/>
+                                    <segue destination="VYq-zu-br8" kind="presentation" identifier="scavengerHuntSegue" id="Nl5-RV-dkc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3M-ev-35e">
                                 <rect key="frame" x="25" y="313" width="79" height="21"/>
@@ -58,9 +62,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtX-es-zPQ">
-                                <rect key="frame" x="132" y="526" width="84" height="30"/>
+                                <rect key="frame" x="132" y="526" width="111" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create"/>
+                                <state key="normal" title="Create account"/>
                                 <connections>
                                     <action selector="onCreate:" destination="5yi-Ts-npn" eventType="touchUpInside" id="WWr-mK-amQ"/>
                                 </connections>
@@ -70,6 +74,8 @@
                         <viewLayoutGuide key="safeArea" id="HVD-qn-3sJ"/>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="KbN-H6-shH" id="NVa-2F-fon"/>
+                        <outlet property="userNameField" destination="Trf-xm-ngG" id="SIR-jL-RWN"/>
                         <segue destination="q7J-Vn-mRB" kind="presentation" identifier="loginToRegistrationSegue" id="uXf-rb-eST"/>
                     </connections>
                 </viewController>
@@ -105,6 +111,10 @@
                                 <rect key="frame" x="35" y="575" width="304" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="q7J-Vn-mRB" eventType="touchUpInside" id="JLZ-dL-Am4"/>
+                                    <segue destination="5yi-Ts-npn" kind="presentation" identifier="creationToScavengerHuntSegue" id="2eq-eX-qgc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPi-Cg-ak3">
                                 <rect key="frame" x="16" y="444" width="81" height="21"/>
@@ -143,6 +153,11 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="G6s-40-cJ9"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="2tB-VZ-RXh" id="2zK-Il-Znv"/>
+                        <outlet property="passwordField" destination="j5Q-tr-8An" id="nMi-Iy-R2B"/>
+                        <outlet property="userNameField" destination="TgQ-D3-GWO" id="equ-oO-jey"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d07-N3-dwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

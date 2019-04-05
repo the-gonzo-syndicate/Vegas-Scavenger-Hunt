@@ -7,13 +7,37 @@
 //
 
 import UIKit
+import Parse
 
 class RegistrationViewController: UIViewController {
-
+    
+    @IBOutlet weak var userNameField: UITextField!
+    
+    @IBOutlet weak var passwordField: UITextField!
+    
+    @IBOutlet weak var emailField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func createAccount(_ sender: Any) {
+        
+        let user = PFUser()
+        user.username = userNameField.text
+        user.password = passwordField.text
+        user.email = emailField.text
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "creationToScavengerHuntSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
     }
     
 
