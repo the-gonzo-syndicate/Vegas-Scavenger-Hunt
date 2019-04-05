@@ -48,6 +48,7 @@ extension LocationCaptureViewController{
             print("Camera is available")
             picker.sourceType = .camera
         }
+        //Use photo library otherwise
         else{
             print("Camera isn't available")
             picker.sourceType = .photoLibrary
@@ -63,6 +64,9 @@ extension LocationCaptureViewController {
         
         //Create local variables
         
+        //let faceRequest = VNDetectFaceRectanglesRequest(completionHandler: faceDetected)
+        //https://developer.apple.com/documentation/vision/detecting_objects_in_still_images
+        //
         //Update Progress
         sceneLabel.text = "detecting scene..."
         
@@ -71,8 +75,8 @@ extension LocationCaptureViewController {
             fatalError("can't load Places ML model")
         }
 
-        
         //Create requests
+        
         let placesRequest = VNCoreMLRequest(model: model) { [weak self] request, error in
             guard let results = request.results as? [VNClassificationObservation],
                 let topResult = results.first else {
