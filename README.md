@@ -112,10 +112,10 @@ Interactive Prototype can be viewed here: https://www.figma.com/proto/Xg2hfX2mls
 
 | Property      | Type        | Description   |
 |---------------|-------------|---------------|
-| userID        | Number      | Unique ID given to each user | 
-| userName      | String      | Unique name for user credentials |
-| userPass      | String      | Unique password for user credentials |
-| userEmail     | String      | User supplied Email address |
+| objectId      | String      | Unique ID given to each user | 
+| username      | String      | Unique name for user credentials |
+| password      | String      | Unique password for user credentials |
+| email         | String      | User supplied Email address |
 | profileImg    | File        | User loaded profile image |
 | huntCount     | Number      | Number of Scavenger Hunts completed by user |
 | stopCount     | Number      | Number of Scavenger Hunt stops visited by user |
@@ -127,7 +127,7 @@ Interactive Prototype can be viewed here: https://www.figma.com/proto/Xg2hfX2mls
 
 | Property        | Type    | Description   |
 |-----------------|---------|---------------|
-| huntID          | Number  | Unique ID given to each Scavenger Hunt |
+| objectId        | String  | Unique ID given to each Scavenger Hunt |
 | huntName        | String  | Name given to each Scavenger Hunt |
 | huntImg         | File    | Image assiciated with the Scavenger Hunt |
 | huntBio         | String  | Information about the Scavenger Hunt for Detail Screen |
@@ -139,12 +139,12 @@ Interactive Prototype can be viewed here: https://www.figma.com/proto/Xg2hfX2mls
 
 | Property        | Type        | Description   |
 |-----------------|-------------|---------------|
-| stopID          | Number      | Unique ID given to each Scavenger Hunt Stop |
+| objectId        | String      | Unique ID given to each Scavenger Hunt Stop |
 | stopName        | String      | Name given to each Scavenger Hunt Stop |
 | stopImg         | File        | Image associated with the Scavenger Hunt Stop |
 | stopBio         | String      | Information about the Scavenger Hunt Stop for Detail Screen |
 | inHunt          | String      | Scavenger Hunt the Stop is a member of |
-| stopCoords      | GeoLocation | Geographic Coordinates of Scavenger Hunt Stop |
+| stopCoords      | Polygon     | Geographic Coordinates of Scavenger Hunt Stop |
 | stopPointVal    | Number      | Point value associated with finding the Scavenger Hunt Stop |
 
 
