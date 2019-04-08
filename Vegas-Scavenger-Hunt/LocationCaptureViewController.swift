@@ -5,7 +5,7 @@
 //  Created by SKY HARTMAN on 3/28/19.
 //  Copyright © 2019 Andrew. All rights reserved.
 //
-
+/*
 import UIKit
 import CoreML
 import Vision
@@ -134,3 +134,4 @@ extension LocationCaptureViewController: UINavigationControllerDelegate {
 func rotateImage(image: UIImage) -> UIImage {
     return UIImage(cgImage: image.cgImage!, scale: image.scale, orientation: .up)
 }
+*/

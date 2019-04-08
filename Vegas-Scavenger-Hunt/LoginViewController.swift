@@ -26,13 +26,25 @@ class LoginViewController: UIViewController {
         let username = userNameField.text!
         let password = passwordField.text!
         
-        PFUser.logInWithUsername(inBackground: username, password: password){ (user, error) in
-            if user != nil {
-                self.performSegue(withIdentifier: "scavengerHuntSegue", sender: nil)
+        PFUser.logInWithUsername(inBackground: username as String!, password: password as String!) {
+            (loggedInUser, signupError) in
+            if (signupError == nil) {
+                
+                self.successfulSegue()
+                
             } else {
-                print("Error: \(String(describing: error?.localizedDescription))")
+                
+                print("Error: \(String(describing: signupError?.localizedDescription))")
+                
+                var alertController = UIAlertController(title: "Error", message: "Error: Incorrect Username/Password", preferredStyle: UIAlertController.Style.alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
             }
         }
+    }
+    
+    func successfulSegue() {
+        self.performSegue(withIdentifier: "loginToScavengerHuntSegue", sender: self)
     }
     
     @IBAction func onCreate(_ sender: Any) {
