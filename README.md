@@ -24,23 +24,23 @@ Vegas Scavenger Hunt is an iOS Application created with Swift, by a student orga
 
 **Required Must-have Stories**
 
-* User can create a new account.
-* User can login.
-* User can view a profile page.
-* User can view a leaderboard.
-* User can scroll through a list of scavenger hunts.
-* User can see details of a scavenger hunt.
-* User can see details of a scavenger hunt stop.
-* User can record visiting a scavenger hunt stop.
-* User can take a picture at a scavenger hunt stop.
-* User gains points for visiting places/completing scavenger hunts.
+- [x] User can create a new account.
+- [x] User can login.
+- [ ] User can view a profile page.
+- [ ] User can view a leaderboard.
+- [ ] User can scroll through a list of scavenger hunts.
+- [ ] User can see details of a scavenger hunt.
+- [ ] User can see details of a scavenger hunt stop.
+- [ ] User can record visiting a scavenger hunt stop.
+- [ ] User can take a picture at a scavenger hunt stop.
+- [ ] User gains points for visiting places/completing scavenger hunts.
 
 **Optional Nice-to-have Stories**
 
-* User is greeted with an animated splash screen.
-* User is shown an onboarding message upon first login.
-* User recieves a video picture collage by email upon scavenger hunt completion.
-* User can share scavenger hunt stop checkins on social media. 
+- [ ] User is greeted with an animated splash screen.
+- [ ] User is shown an onboarding message upon first login.
+- [ ] User recieves a video picture collage by email upon scavenger hunt completion.
+- [ ] User can share scavenger hunt stop checkins on social media. 
 
 ### 2. Screen Archetypes
 
@@ -324,3 +324,23 @@ Interactive Prototype can be viewed here: https://www.figma.com/proto/Xg2hfX2mls
       ```
 ### API endpoints
 * No API endpoints are used
+
+## SPRINT #1
+
+Many achievements were completed during our first sprint. Aside from the User Stories that were completed, the VSH_MASTER_APP 
+was completed, which is an app that will record and save the location information and pictures of the various scavenger
+hunt stops. This was a pretty big achievement, as it dealt with a lot of issues that we were not familiar with, such as 
+UIMapKit, and creating Polygons in Parse.  
+
+### Here is a gif of the Master App doing its work.
+
+<img src="http://g.recordit.co/uWWSgZpmZr.gif" width=400>
+
+Aside from the master app, we also created the base wireframe and viewfinders for the entire app, created a working 
+login and accout creation page, and also added custom artwork and icons. It was a successful week. 
+
+### Here is a gif of the Vegas Scavenger Hunt App functionality so far
+
+<img src="http://g.recordit.co/ylk0NfwZqi.gif" width=400>
+
+Sprint planning is in the project section of github, Sprint is planned for the upcoming week.
