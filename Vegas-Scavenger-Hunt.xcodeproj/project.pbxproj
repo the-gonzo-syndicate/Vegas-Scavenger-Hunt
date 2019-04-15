@@ -15,6 +15,7 @@
 		499601F7224C89F300D1B1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499601F5224C89F300D1B1CF /* LaunchScreen.storyboard */; };
 		49960202224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49960201224C89F400D1B1CF /* Vegas_Scavenger_HuntTests.swift */; };
 		4996020D224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */; };
+		49A48F962263E1DF003F4A25 /* StopListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A48F952263E1DE003F4A25 /* StopListCell.swift */; };
 		49BCB821225AFEA500FEC188 /* BaseTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB820225AFEA500FEC188 /* BaseTabBarControllerViewController.swift */; };
 		49BCB823225B097300FEC188 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCB822225B097300FEC188 /* RoundButton.swift */; };
 		4D0ED87F09B8EB23E6AA7C63 /* Pods_Vegas_Scavenger_HuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */; };
@@ -63,6 +64,7 @@
 		49960208224C89F400D1B1CF /* Vegas-Scavenger-HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vegas-Scavenger-HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4996020C224C89F400D1B1CF /* Vegas_Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vegas_Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		4996020E224C89F400D1B1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A48F952263E1DE003F4A25 /* StopListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopListCell.swift; sourceTree = "<group>"; };
 		49BCB820225AFEA500FEC188 /* BaseTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		49BCB822225B097300FEC188 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		535717FCF01C108575329E7F /* Pods_Vegas_Scavenger_HuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vegas_Scavenger_HuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 				49BCB820225AFEA500FEC188 /* BaseTabBarControllerViewController.swift */,
 				49BCB822225B097300FEC188 /* RoundButton.swift */,
 				E9FDE5912260279C002383F8 /* ScavengerHuntCellTableViewCell.swift */,
+				49A48F952263E1DE003F4A25 /* StopListCell.swift */,
 			);
 			path = "Vegas-Scavenger-Hunt";
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				6A455FEE224DAE9B00F966FD /* RegistrationViewController.swift in Sources */,
 				499601ED224C89EB00D1B1CF /* AppDelegate.swift in Sources */,
 				E9FDE5922260279C002383F8 /* ScavengerHuntCellTableViewCell.swift in Sources */,
+				49A48F962263E1DF003F4A25 /* StopListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

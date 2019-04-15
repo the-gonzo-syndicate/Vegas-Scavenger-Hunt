@@ -7,16 +7,97 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
-class HuntDetailViewController: UIViewController {
+class HuntDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var stopList = [PFObject]()
+
+    @IBOutlet weak var stopListTableView: UITableView!
+    
+    @IBOutlet weak var huntNameLabel: UILabel!
+    
+    @IBOutlet weak var huntBioLabel: UILabel!
+    
+    @IBOutlet weak var huntImage: UIImageView!
+    
+    var catchHunt = PFObject(className: "Hunt")
+    
+    var selectedStop = PFObject(className: "Stops")
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        huntNameLabel.text = catchHunt["huntName"] as? String
+        huntBioLabel.text = catchHunt["huntBio"] as? String
+        
+        let imageFile = catchHunt["huntImg"] as! PFFileObject
+        let urlString = imageFile.url!
+        
+        let url = URL(string: urlString)!
 
-        // Do any additional setup after loading the view.
+        huntImage.af_setImage(withURL: url)
+        
+        stopListTableView.delegate = self
+        stopListTableView.dataSource = self
+        
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "Stops")
+        query.whereKey("inHunt", equalTo: catchHunt["huntName"])
+        //query.order(byDecending: "createdAt")
+        query.limit = 20
+        query.findObjectsInBackground { (stopList, error) in
+            
+            if stopList != nil {
+                self.stopList = stopList!
+                print(self.stopList)
+                self.stopListTableView.reloadData()
+            }
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return stopList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "StopListCell") as! StopListCell
+        
+        let stop = stopList[indexPath.row]
+        
+        let name = "\(indexPath.row + 1). \(stop["stopName"] ?? "Error")"
+        cell.stopNameLabel.text = name
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let row = indexPath.row
+        selectedStop = stopList[row]
+        
+        self.performSegue(withIdentifier: "huntDetailToStopDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.destination is StopLocationDetailViewController) {
+            let vc = segue.destination as! StopLocationDetailViewController
+            vc.catchStop = selectedStop
+        }
+    }
+    
+    @IBAction func onBack(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "huntDetailToHuntFeed", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -18,7 +18,7 @@ class ScavengerHuntFeedViewController: UIViewController, UITableViewDelegate, UI
     
     var hunts = [PFObject]()
     
-    var selectedHunt: PFObject!
+    var selectedHunt = PFObject(className: "Hunts")
     
     
     
@@ -36,7 +36,7 @@ class ScavengerHuntFeedViewController: UIViewController, UITableViewDelegate, UI
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Hunt")
-        query.includeKeys(["huntName", "huntDifficulty", "huntStopCount"])
+        query.includeKeys(["huntName", "huntDifficulty", "huntStopCount", "huntImg", "huntBio"])
         //query.order(byDecending: "createdAt")
         query.limit = 20
         query.findObjectsInBackground { (hunts, error) in
@@ -70,27 +70,43 @@ class ScavengerHuntFeedViewController: UIViewController, UITableViewDelegate, UI
         cell.huntNameLabel.text = name
             
         let stops = hunt["huntStopCount"] as! Int
-        cell.stopCountLabel.text = String(stops)
+        cell.stopCountLabel.text = "Number of Stops: \(stops)"
         
             
         let difficulty = hunt["huntDifficulty"] as! String
-        cell.difficultyLabel.text = difficulty
+        cell.difficultyLabel.text = "Difficulty: \(difficulty)"
             
-        //let imageFile = hunt["huntImg"] as! PFFileObject
+        let imageFile = hunt["huntImg"] as! PFFileObject
+        let urlString = imageFile.url!
             
-        //let url = URL(string: urlString)!
+        let url = URL(string: urlString)!
             
-        //cell.photoView.af_setImage(withURL: url)
+        cell.photoView.af_setImage(withURL: url)
             
         return cell
         //}
 
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let row = indexPath.row
+        selectedHunt = hunts[row]
+        
+        self.performSegue(withIdentifier: "huntFeedToHuntDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.destination is HuntDetailViewController) {
+            let vc = segue.destination as! HuntDetailViewController
+            vc.catchHunt = selectedHunt
+        }
+    }
 
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

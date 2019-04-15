@@ -7,16 +7,43 @@
 //
 
 import UIKit
+import Parse
+import AlamofireImage
 
 class StopLocationDetailViewController: UIViewController {
-
+    
+    var catchStop = PFObject(className: "Stops")
+    
+    
+    @IBOutlet weak var stopImageView: UIImageView!
+    
+    @IBOutlet weak var stopNameLabel: UILabel!
+    
+    @IBOutlet weak var stopBioLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        stopNameLabel.text = catchStop["stopName"] as? String
+        stopBioLabel.text = catchStop["stopBio"] as? String
+        
+        if (catchStop["stopImg"] != nil) {
+            
+            let imageFile = catchStop["stopImg"] as! PFFileObject
+            let urlString = imageFile.url!
+            
+            let url = URL(string: urlString)!
+            
+            stopImageView.af_setImage(withURL: url)
+        }
     }
     
 
+    @IBAction func onBack(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "stopDetailToHuntFeed", sender: self)
+        
+    }
     /*
     // MARK: - Navigation
 
