@@ -35,15 +35,20 @@ class StopLocationDetailViewController: UIViewController {
             let url = URL(string: urlString)!
             
             stopImageView.af_setImage(withURL: url)
-        }
+            
+            stopImageView.layer.cornerRadius = 20
+            stopImageView.clipsToBounds = true
+            stopImageView.layer.borderColor = UIColor.black.cgColor
+            stopImageView.layer.borderWidth = 6        }
     }
     
-
     @IBAction func onBack(_ sender: Any) {
         
         self.performSegue(withIdentifier: "stopDetailToHuntFeed", sender: self)
         
     }
+    
+    
     /*
     // MARK: - Navigation
 

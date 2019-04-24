@@ -31,6 +31,10 @@ class RegistrationViewController: UIViewController {
         user.password = passwordField.text
         user.email = emailField.text
         
+        user["pointsCount"] = 0
+        user["stopCount"] = 0
+        user["huntCount"] = 0
+        
         user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "creationToScavengerHuntSegue", sender: nil)

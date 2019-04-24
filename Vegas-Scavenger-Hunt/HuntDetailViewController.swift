@@ -39,6 +39,11 @@ class HuntDetailViewController: UIViewController, UITableViewDelegate, UITableVi
 
         huntImage.af_setImage(withURL: url)
         
+        huntImage.layer.cornerRadius = 20
+        huntImage.clipsToBounds = true
+        huntImage.layer.borderColor = UIColor.black.cgColor
+        huntImage.layer.borderWidth = 6
+        
         stopListTableView.delegate = self
         stopListTableView.dataSource = self
         
@@ -96,6 +101,7 @@ class HuntDetailViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBAction func onBack(_ sender: Any) {
         
         self.performSegue(withIdentifier: "huntDetailToHuntFeed", sender: self)
+        
     }
     
     /*
