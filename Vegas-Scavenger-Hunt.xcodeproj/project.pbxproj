@@ -26,7 +26,6 @@
 		6A455FF2224DB3AF00F966FD /* ScavengerHuntFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FF1224DB3AF00F966FD /* ScavengerHuntFeedViewController.swift */; };
 		6A455FF4224DB40700F966FD /* LeaderboardFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FF3224DB40700F966FD /* LeaderboardFeedViewController.swift */; };
 		6A455FF6224DBFC700F966FD /* HuntDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FF5224DBFC700F966FD /* HuntDetailViewController.swift */; };
-		6A455FFA224DC63A00F966FD /* LocationCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FF9224DC63A00F966FD /* LocationCaptureViewController.swift */; };
 		6A455FFC224DC7BB00F966FD /* StopLocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A455FFB224DC7BB00F966FD /* StopLocationDetailViewController.swift */; };
 		E9FDE5922260279C002383F8 /* ScavengerHuntCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FDE5912260279C002383F8 /* ScavengerHuntCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -76,7 +75,6 @@
 		6A455FF1224DB3AF00F966FD /* ScavengerHuntFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntFeedViewController.swift; sourceTree = "<group>"; };
 		6A455FF3224DB40700F966FD /* LeaderboardFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardFeedViewController.swift; sourceTree = "<group>"; };
 		6A455FF5224DBFC700F966FD /* HuntDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntDetailViewController.swift; sourceTree = "<group>"; };
-		6A455FF9224DC63A00F966FD /* LocationCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCaptureViewController.swift; sourceTree = "<group>"; };
 		6A455FFB224DC7BB00F966FD /* StopLocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLocationDetailViewController.swift; sourceTree = "<group>"; };
 		721BE86F1B27A266ABDAF24E /* Pods-Vegas-Scavenger-HuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntTests/Pods-Vegas-Scavenger-HuntTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DA6E1202E8838C8545DF9AC /* Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vegas-Scavenger-HuntUITests/Pods-Vegas-Scavenger-HuntUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				6A455FF1224DB3AF00F966FD /* ScavengerHuntFeedViewController.swift */,
 				6A455FF3224DB40700F966FD /* LeaderboardFeedViewController.swift */,
 				6A455FF5224DBFC700F966FD /* HuntDetailViewController.swift */,
-				6A455FF9224DC63A00F966FD /* LocationCaptureViewController.swift */,
 				6A455FFB224DC7BB00F966FD /* StopLocationDetailViewController.swift */,
 				49BCB820225AFEA500FEC188 /* BaseTabBarControllerViewController.swift */,
 				49BCB822225B097300FEC188 /* RoundButton.swift */,
@@ -435,7 +432,6 @@
 			files = (
 				6A455FFC224DC7BB00F966FD /* StopLocationDetailViewController.swift in Sources */,
 				49BCB821225AFEA500FEC188 /* BaseTabBarControllerViewController.swift in Sources */,
-				6A455FFA224DC63A00F966FD /* LocationCaptureViewController.swift in Sources */,
 				6A455FF4224DB40700F966FD /* LeaderboardFeedViewController.swift in Sources */,
 				49BCB823225B097300FEC188 /* RoundButton.swift in Sources */,
 				6A455FEC224DAD7900F966FD /* LoginViewController.swift in Sources */,

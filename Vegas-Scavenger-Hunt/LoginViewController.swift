@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userNameField: UITextField!
     
@@ -17,6 +17,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userNameField.delegate = self
+        passwordField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -44,6 +47,7 @@ class LoginViewController: UIViewController {
     }
     
     func successfulSegue() {
+        
         self.performSegue(withIdentifier: "loginToScavengerHuntSegue", sender: self)
     }
     
@@ -51,14 +55,24 @@ class LoginViewController: UIViewController {
         
         self.performSegue(withIdentifier: "loginToRegistrationSegue", sender: self)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func hideKeyboard() {
+        
+        userNameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
     }
-    */
+    
+    
+    // UItextfield delegate methods
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        hideKeyboard()
+        return true
+    }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 }

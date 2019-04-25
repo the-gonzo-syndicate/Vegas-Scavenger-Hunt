@@ -413,55 +413,6 @@
             </objects>
             <point key="canvasLocation" x="434" y="3681"/>
         </scene>
-        <!--location capture-->
-        <scene sceneID="iGT-5l-VMD">
-            <objects>
-                <viewController id="t0l-gZ-0xh" customClass="LocationCaptureViewController" customModule="Vegas_Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sK1-0Z-e7a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RyZ-FQ-hin">
-                                <rect key="frame" x="16" y="28" width="343" height="226"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZJ-74-pNL" customClass="RoundButton" customModule="Vegas_Scavenger_Hunt" customModuleProvider="target">
-                                <rect key="frame" x="129" y="301" width="116" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41338024239999999" green="0.046648190800000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pickImage:" destination="t0l-gZ-0xh" eventType="touchUpInside" id="VZ5-q3-wQD"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-Ze-4Qt">
-                                <rect key="frame" x="55" y="272" width="265" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="heo-Ux-Unb"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="location capture" image="camera" id="SB5-nb-yJ1"/>
-                    <connections>
-                        <outlet property="scene" destination="RyZ-FQ-hin" id="Ql5-N9-Ybx"/>
-                        <outlet property="sceneLabel" destination="pxd-Ze-4Qt" id="HGk-CL-yBh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gt-Ij-uzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1265" y="3681"/>
-        </scene>
         <!--Leaderboard-->
         <scene sceneID="Sjp-Ha-rxV">
             <objects>
@@ -509,7 +460,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VSH_Leaderboard_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Nba-PL-fpv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VSH_Leaderboard_Logo3" translatesAutoresizingMaskIntoConstraints="NO" id="Nba-PL-fpv">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="358-gB-LE4"/>
@@ -553,11 +504,11 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue_chip_point" translatesAutoresizingMaskIntoConstraints="NO" id="4HN-uY-n5t">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="points_chip" translatesAutoresizingMaskIntoConstraints="NO" id="4HN-uY-n5t">
                                 <rect key="frame" x="24" y="287" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_chip_stop" highlightedImage="red_chip_stop" translatesAutoresizingMaskIntoConstraints="NO" id="IJ4-tf-Qzv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stop_chip" highlightedImage="red_chip_stop" translatesAutoresizingMaskIntoConstraints="NO" id="IJ4-tf-Qzv">
                                 <rect key="frame" x="24" y="503" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -582,7 +533,7 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yellow_chip_hunt" translatesAutoresizingMaskIntoConstraints="NO" id="xCL-2Y-Ed0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hunt_chip" translatesAutoresizingMaskIntoConstraints="NO" id="xCL-2Y-Ed0">
                                 <rect key="frame" x="24" y="395" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -651,19 +602,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="VSH_Leaderboard_Logo" width="750" height="640"/>
+        <image name="VSH_Leaderboard_Logo3" width="750" height="643"/>
         <image name="VSH_Logo-1" width="750" height="555"/>
         <image name="blank_vegas_background" width="750" height="555"/>
-        <image name="blue_chip_point" width="450" height="450"/>
         <image name="camera" width="30" height="30"/>
+        <image name="hunt_chip" width="450" height="450"/>
         <image name="hunt_placeholder" width="100" height="100"/>
         <image name="map_marker" width="30" height="30"/>
+        <image name="points_chip" width="450" height="450"/>
         <image name="red_chip_stop" width="450" height="450"/>
+        <image name="stop_chip" width="450" height="450"/>
         <image name="trophy" width="30" height="30"/>
         <image name="user_male" width="30" height="30"/>
-        <image name="yellow_chip_hunt" width="450" height="450"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EUu-BA-kBd"/>
+        <segue reference="Tws-vZ-QZF"/>
     </inferredMetricsTieBreakers>
 </document>
