@@ -26,11 +26,11 @@ Vegas Scavenger Hunt is an iOS Application created with Swift, by a student orga
 
 - [x] User can create a new account.
 - [x] User can login.
-- [ ] User can view a profile page.
+- [x] User can view a profile page.
 - [ ] User can view a leaderboard.
-- [ ] User can scroll through a list of scavenger hunts.
-- [ ] User can see details of a scavenger hunt.
-- [ ] User can see details of a scavenger hunt stop.
+- [x] User can scroll through a list of scavenger hunts.
+- [x] User can see details of a scavenger hunt.
+- [x] User can see details of a scavenger hunt stop.
 - [ ] User can record visiting a scavenger hunt stop.
 - [ ] User can take a picture at a scavenger hunt stop.
 - [ ] User gains points for visiting places/completing scavenger hunts.
@@ -342,5 +342,18 @@ login and accout creation page, and also added custom artwork and icons. It was 
 ### Here is a gif of the Vegas Scavenger Hunt App functionality so far
 
 <img src="http://g.recordit.co/ylk0NfwZqi.gif" width=400>
+
+Sprint planning is in the project section of github, Sprint is planned for the upcoming week.
+
+## Sprint #2
+
+We once again had a successful sprint this week.  We completed the profile page, with functionality to allow the user
+to upload their own picture. We also created the feeds for the scavenger hunts and the detail pages for the scavenger
+hunts and the stops. Some of the hunts have been recorded, with more being added daily with the master app. Next weeks
+sprint 
+
+### Here is a gif of the Vegas Scavenger Hunt App functionality so far
+
+<img src="http://g.recordit.co/D0r5Pp9p0b.gif" width=400>
 
 Sprint planning is in the project section of github, Sprint is planned for the upcoming week.
