@@ -354,6 +354,6 @@ sprint
 
 ### Here is a gif of the Vegas Scavenger Hunt App functionality so far
 
-<img src="http://g.recordit.co/D0r5Pp9p0b.gif" width=400>
+<img src="http://g.recordit.co/wfjPNvif8I.gif" width=400>
 
 Sprint planning is in the project section of github, Sprint is planned for the upcoming week.
