@@ -82,7 +82,11 @@ class ScavengerHuntFeedViewController: UIViewController, UITableViewDelegate, UI
         let url = URL(string: urlString)!
             
         cell.photoView.af_setImage(withURL: url)
-            
+        cell.photoView.layer.cornerRadius = 20
+        cell.photoView.clipsToBounds = true
+        cell.photoView.layer.borderColor = UIColor.black.cgColor
+        cell.photoView.layer.borderWidth = 6
+        
         return cell
         //}
 
