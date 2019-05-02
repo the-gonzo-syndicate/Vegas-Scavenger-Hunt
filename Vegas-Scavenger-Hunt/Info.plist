@@ -50,5 +50,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The app needs your location in order to detect if you are at the location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The app needs your location in order to detect if you are at the location</string>
 </dict>
 </plist>
