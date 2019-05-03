@@ -184,15 +184,32 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
         resultMessageLabel.text = "CONGRATS! You have found this stop!"
         
         tempStop["collectedStop"] = catchStop
+        
+        //let stopPoints = catchStop["pointsCount"] as! NSNumber
+        
+        let addPoints = PFUser.current()
+        addPoints?.incrementKey("pointsCount", byAmount: 5)
+        addPoints?.incrementKey("stopCount", byAmount:1)
+        addPoints?.saveInBackground {
+            (success: Bool, error: Error?) in
+            if (success) {
+                // The score key has been incremented
+                print("points added")
+            } else {
+                // There was a problem, check error.description
+                print("something went wrong with points")
+            }
+        }
+        
         let query = PFQuery(className: "Stops")
-        query.getObjectInBackground(withId: catchStop.objectId!) { (gameScore: PFObject?, error: Error?) in
+        query.getObjectInBackground(withId: catchStop.objectId!) { (obj: PFObject?, error: Error?) in
             if let error = error {
                 //The query returned an error
                 print(error.localizedDescription)
             } else {
                 //The object has been retrieved
-                print(gameScore)
-                self.tempStop["collectedStop"] = gameScore
+                print(obj)
+                self.tempStop["collectedStop"] = obj
                 self.array.append(self.tempStop)
                 self.currentUser!["stopArray"] = self.array
                 self.currentUser?.saveInBackground(block: { (suceess, error) in
