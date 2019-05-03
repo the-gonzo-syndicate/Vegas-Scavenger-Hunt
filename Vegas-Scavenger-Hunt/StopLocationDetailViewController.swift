@@ -18,7 +18,9 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
     
     var currentUser = PFUser.current()
     
-    var tempStop = PFObject(className: "Stops")
+    var tempStop = PFObject(className: "UserStops")
+    
+    var array = [PFObject]()
     
     
     @IBOutlet weak var stopImageView: UIImageView!
@@ -29,6 +31,7 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
     
     @IBOutlet weak var resultMessageLabel: UILabel!
     
+    @IBOutlet weak var captureButton: RoundButton!
     //var longitude: Double = 0.0
     //var latitude: Double = 0.0
     
@@ -146,6 +149,11 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
             self.present(alert, animated: true, completion: nil)
             
             
+            
+            
+            
+            
+            
         } else {
             resultMessageLabel.text = "Wrong Location, Try Again!"
             DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
@@ -170,8 +178,48 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
         let imageData = stopImageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         
-        //tempStop?["stopImg"] = file
+        tempStop["stopImage"] = file
         
+        captureButton.isHidden = true
+        resultMessageLabel.text = "CONGRATS! You have found this stop!"
+        
+        tempStop["collectedStop"] = catchStop
+        let query = PFQuery(className: "Stops")
+        query.getObjectInBackground(withId: catchStop.objectId!) { (gameScore: PFObject?, error: Error?) in
+            if let error = error {
+                //The query returned an error
+                print(error.localizedDescription)
+            } else {
+                //The object has been retrieved
+                print(gameScore)
+                self.tempStop["collectedStop"] = gameScore
+                self.array.append(self.tempStop)
+                self.currentUser!["stopArray"] = self.array
+                self.currentUser?.saveInBackground(block: { (suceess, error) in
+                    if let error = error {
+                        print(error.localizedDescription)
+                    } else{
+                        print("ya it save. 😀")
+                    }
+                })
+            }
+        }
+        
+        //let addPoints = catchStop["stopPointValue"] as! Int
+        //var userPoints = currentUser?["pointsCount"] as! Int
+        
+        
+        //userPoints = userPoints + addPoints
+        
+        //currentUser?["pointsCount"] = userPoints
+        
+        /*currentUser?.saveInBackground { (success, error) in
+            if success {
+                print("saved")
+            } else {
+                print("error saving...")
+            }
+        }*/
     }
 
 }
