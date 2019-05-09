@@ -368,3 +368,9 @@ small issues to address, like assigning points, and some cosmetic things when lo
 ### Here is a gif of the Vegas Scavenger Hunt App functionality so far
 
 <img src="http://g.recordit.co/TZKcXgl5KB.gif" width=400>
+
+## Sprint #4
+
+Sprint number 4 was not very successful. I have run into roadblock after roadblock, and cannot get anything I try to work. There is no
+gif update this week, because there was literally no additions made to the app that were successful. Hopefully some of my issues can be
+worked through tonight in class. If not, I fear that the app may not be working by next week.
