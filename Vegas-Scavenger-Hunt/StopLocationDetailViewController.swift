@@ -15,12 +15,17 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
     var locationManager = CLLocationManager()
     
     var catchStop = PFObject(className: "Stops")
+    var userFoundStop = PFObject(className: "Stops")
     
     var currentUser = PFUser.current()
     
     var tempStop = PFObject(className: "UserStops")
     
+    var arrayOfStops = [PFObject]()
+    
     var array = [PFObject]()
+    
+    var found = false
     
     
     @IBOutlet weak var stopImageView: UIImageView!
@@ -32,6 +37,7 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
     @IBOutlet weak var resultMessageLabel: UILabel!
     
     @IBOutlet weak var captureButton: RoundButton!
+    
     //var longitude: Double = 0.0
     //var latitude: Double = 0.0
     
@@ -44,19 +50,85 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
         locationManager.requestWhenInUseAuthorization()
         
         
-        //let huntArray = currentUser?["huntArray"]
         
-        if (currentUser?["stopArray"] == nil) {
-            // if it is empty or not in the array
-            
-            
-            
-            print("Yeah its empty")
-        } else {
-            print("We got something here!")
-            
-            // load the found object if it is in the users array of stops
-        }
+        let user = PFUser.query()
+        user?.includeKeys(["stopArray", "stopArray.stopImage",  "stopArray.collectedStop"])
+        user?.whereKey("objectId", equalTo: currentUser?.objectId!)
+
+        user?.getFirstObjectInBackground(block: { (user, error) in
+            if let error = error{
+                print(error.localizedDescription)
+            } else{
+                self.array = user!["stopArray"] as! [PFObject]
+                print(self.catchStop)
+                for stop in self.array{
+                    print("added a stop")
+                    print(stop["collectedStop"] as! PFObject)
+                    self.arrayOfStops.append(stop)
+                    
+                }
+                //let huntArray = currentUser?["huntArray"]
+                let catchName = self.catchStop["stopName"] as! String
+                for stop in self.arrayOfStops{
+                    let collectedStop = stop["collectedStop"] as!PFObject
+                    let stopName = collectedStop["stopName"] as! String
+                    if stopName == catchName{
+                        self.found = true
+                        self.userFoundStop = stop
+                    break
+                    }
+                }
+                if (self.found) {
+                    // if it is empty or not in the array
+                    
+                    print("we have been there")
+                    
+                    self.stopNameLabel.text = self.catchStop["stopName"] as? String
+                    self.stopBioLabel.text = self.catchStop["stopBio"] as? String
+                    
+                    let imageFile = self.userFoundStop["stopImage"] as! PFFileObject
+                    let urlString = imageFile.url!
+                    
+                    let url = URL(string: urlString)!
+                    
+                    self.stopImageView.af_setImage(withURL: url)
+                    
+                    self.stopImageView.layer.cornerRadius = 20
+                    self.stopImageView.clipsToBounds = true
+                    self.stopImageView.layer.borderColor = UIColor.black.cgColor
+                    self.stopImageView.layer.borderWidth = 6
+                    
+                    self.captureButton.isHidden = true
+                    self.resultMessageLabel.text = "CONGRATS! You have found this stop!"
+                    
+                    //print("Yeah its empty")
+                } else {
+                    //print("We got something here!")
+                    print("We have not been there yet")
+                    
+                    self.stopNameLabel.text = self.catchStop["stopName"] as? String
+                    self.stopBioLabel.text = self.catchStop["stopBio"] as? String
+                    
+                    
+                    let imageFile = self.catchStop["stopImg"] as! PFFileObject
+                    let urlString = imageFile.url!
+                    
+                    let url = URL(string: urlString)!
+                    
+                    self.stopImageView.af_setImage(withURL: url)
+                    
+                    self.stopImageView.layer.cornerRadius = 20
+                    self.stopImageView.clipsToBounds = true
+                    self.stopImageView.layer.borderColor = UIColor.black.cgColor
+                    self.stopImageView.layer.borderWidth = 6
+                    
+                    
+                    // load the found object if it is in the users array of stops
+                }
+            }
+        })
+        
+        
         
         
         

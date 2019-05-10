@@ -38,6 +38,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         user["pointsCount"] = 0
         user["stopCount"] = 0
         user["huntCount"] = 0
+        user["stopArray"] = []
         
         user.signUpInBackground { (success, error) in
             if success {
