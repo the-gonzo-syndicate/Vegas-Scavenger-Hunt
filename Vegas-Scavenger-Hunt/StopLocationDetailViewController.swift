@@ -109,14 +109,15 @@ class StopLocationDetailViewController: UIViewController, CLLocationManagerDeleg
                     self.stopNameLabel.text = self.catchStop["stopName"] as? String
                     self.stopBioLabel.text = self.catchStop["stopBio"] as? String
                     
+                    if (self.catchStop["stopImg"] != nil) {
+                        
+                        let imageFile = self.catchStop["stopImg"] as! PFFileObject
+                        let urlString = imageFile.url!
                     
-                    let imageFile = self.catchStop["stopImg"] as! PFFileObject
-                    let urlString = imageFile.url!
+                        let url = URL(string: urlString)!
                     
-                    let url = URL(string: urlString)!
-                    
-                    self.stopImageView.af_setImage(withURL: url)
-                    
+                        self.stopImageView.af_setImage(withURL: url)
+                    }
                     self.stopImageView.layer.cornerRadius = 20
                     self.stopImageView.clipsToBounds = true
                     self.stopImageView.layer.borderColor = UIColor.black.cgColor
