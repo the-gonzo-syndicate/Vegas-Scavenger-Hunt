@@ -33,7 +33,7 @@ Vegas Scavenger Hunt is an iOS Application created with Swift, by a student orga
 - [x] User can see details of a scavenger hunt stop.
 - [x] User can record visiting a scavenger hunt stop.
 - [x] User can take a picture at a scavenger hunt stop.
-- [ ] User gains points for visiting places/completing scavenger hunts.
+- [x] User gains points for visiting places/completing scavenger hunts.
 
 **Optional Nice-to-have Stories**
 
@@ -374,3 +374,7 @@ small issues to address, like assigning points, and some cosmetic things when lo
 Sprint number 4 was not very successful. I have run into roadblock after roadblock, and cannot get anything I try to work. There is no
 gif update this week, because there was literally no additions made to the app that were successful. Hopefully some of my issues can be
 worked through tonight in class. If not, I fear that the app may not be working by next week.
+
+## Final Sprint
+
+Phew.  We got all of the roadblocks fixed, and everything working!  All user stories are checked off. Its nice to see a working app!  I also put the app on my phone, and tested it at various stops, to ensure that the location information for the geofences was working as intended, and it was.  All is good! Preparing for the presentation tonight!
